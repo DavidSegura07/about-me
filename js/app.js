@@ -24,17 +24,21 @@ function checkIfILikeCars() {
 }
 checkIfILikeCars();
 
-let cityBorn = prompt('Was I born in Santa Ana? Yes or No?').toLowerCase();
-if (cityBorn === 'yes' || cityBorn === 'y'){
-  //console.log('Yes, I was born in Santa Ana.');
-  alert('Yes, I was born in Santa Ana');
-} else if (cityBorn === 'no' || cityBorn === 'n'){
-  //console.log('That\' incorrect);
-  alert('That\' incorrect.');
-} else {
-  //console.log('You need to answer with a yes or no. Was I born in Santa Ana? Yes or No?');
-  alert('You need to answer with a yes or no. Was I born in Santa Ana? Yes or No?');
+function checkBornCity() {
+  let cityBorn = prompt('Was I born in Santa Ana? Yes or No?').toLowerCase();
+  if (cityBorn === 'yes' || cityBorn === 'y'){
+    //console.log('Yes, I was born in Santa Ana.');
+    alert('Yes, I was born in Santa Ana');
+  } else if (cityBorn === 'no' || cityBorn === 'n'){
+    //console.log('That\' incorrect);
+    alert('That\' incorrect.');
+  } else {
+    //console.log('You need to answer with a yes or no. Was I born in Santa Ana? Yes or No?');
+    alert('You need to answer with a yes or no. Was I born in Santa Ana? Yes or No?');
+  }
 }
+checkBornCity();
+
 
 let favoriteCar = prompt('Is the BMW M3 my favorite car? Yes or No?').toLowerCase();
 if (favoriteCar === 'yes' || favoriteCar === 'y'){
