@@ -54,18 +54,21 @@ function myFavCars() {
 }
 myFavCars();
 
-
-let hatePhotography = prompt('Do i hate photography? Yes or No').toLowerCase();
-if (hatePhotography === 'yes' || hatePhotography ==='y'){
-  //console.log('No that\'s incorrect');
-  alert('No that\'s incorrect');
-} else if (hatePhotography === 'no' || hatePhotography === 'n'){
-  //console.log('No, I love photography');
-  alert('No, I love photography');
-} else {
-  //console.log('You need to answer with a yes or no. Do i hate photography? Yes or No?);
-  alert('You need to answer with a yes or no. Do i hate photography? Yes or No?');
+function hatePhoto() {
+  let hatePhotography = prompt('Do i hate photography? Yes or No').toLowerCase();
+  if (hatePhotography === 'yes' || hatePhotography ==='y'){
+    //console.log('No that\'s incorrect');
+    alert('No that\'s incorrect');
+  } else if (hatePhotography === 'no' || hatePhotography === 'n'){
+    //console.log('No, I love photography');
+    alert('No, I love photography');
+  } else {
+    //console.log('You need to answer with a yes or no. Do i hate photography? Yes or No?);
+    alert('You need to answer with a yes or no. Do i hate photography? Yes or No?');
+  }
 }
+hatePhoto();
+
 
 let secondFavoriteColor = prompt('Is black my favorite color? Yes or No?').toLowerCase();
 if (secondFavoriteColor === 'yes' || secondFavoriteColor === 'y'){
