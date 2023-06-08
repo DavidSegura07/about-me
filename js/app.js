@@ -67,3 +67,40 @@ if (secondFavoriteColor === 'yes' || secondFavoriteColor === 'y'){
   //console.log('You need to answer with a yes or no.Is black my favorite color? Yes or No?');
   alert('You need to answer with a yes or no. Is black my favorite color? Yes or No?');
 }
+// Question 6
+let attempts = 4;
+let correctNumber = 7;
+
+for (let i = 0; i < attempts; i++) {
+  let userGuess = prompt(`Pick a number from 1 to 10. (You have ${attempts - i} attemps reamining):`);
+  userGuess = parseInt(userGuess);
+  console.log(correctNumber);
+  console.log(userGuess);
+  console.log(typeof userGuess);
+  if (userGuess < correctNumber) {
+    alert('Too Low!');
+  } else if (userGuess > correctNumber) {
+    alert('Too High');
+  } else if (userGuess === correctNumber) {
+    alert('Just right');
+    break;
+  }
+}
+alert('The answer is 7');
+// Question 7
+let favCarsAnswers = ['BMW E36', 'BMW E30', 'Porsche 997', 'BMW E46', 'Toyota AE86 Trueno', 'Nissan 240 S14','Nissan 240 S13', 'Mazda RX7 FD', 'Nissan R32 Skyline', 'Ford Mustang 1968'];
+let attemptsToGo = 20;
+
+for (let j = 0; j < attemptsToGo; j++) {
+  let userGuess = prompt(`What are my top 10 favorite cars? (You have ${attemptsToGo - j} attemps reamining):`).toLowerCase();
+  console.log(favCarsAnswers);
+  console.log(userGuess);
+  console.log(typeof userGuess);
+  if (favCarsAnswers === userGuess) {
+    alert('That\'s Correct! what other cars are on my top ten?');
+  } else if (!favCarsAnswers.includes(userGuess)) {
+    alert('Not quite,');
+    break;
+  }
+}
+alert ('My Top Ten are ' + favCarsAnswers.join(','));
