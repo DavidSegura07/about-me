@@ -69,18 +69,21 @@ function hatePhoto() {
 }
 hatePhoto();
 
-
-let secondFavoriteColor = prompt('Is black my favorite color? Yes or No?').toLowerCase();
-if (secondFavoriteColor === 'yes' || secondFavoriteColor === 'y'){
-  //console.log('No, that\'s incorrect ');
-  alert('No, that\'s incorrect ');
-} else if (secondFavoriteColor === 'No' || secondFavoriteColor === 'n' ){
-  //console.log('That\'s Correct');
-  alert('That\'s Correct');
-} else {
-  //console.log('You need to answer with a yes or no.Is black my favorite color? Yes or No?');
-  alert('You need to answer with a yes or no. Is black my favorite color? Yes or No?');
+function colorBlack() {
+  let secondFavoriteColor = prompt('Is black my favorite color? Yes or No?').toLowerCase();
+  if (secondFavoriteColor === 'yes' || secondFavoriteColor === 'y'){
+    //console.log('No, that\'s incorrect ');
+    alert('No, that\'s incorrect ');
+  } else if (secondFavoriteColor === 'No' || secondFavoriteColor === 'n' ){
+    //console.log('That\'s Correct');
+    alert('That\'s Correct');
+  } else {
+    //console.log('You need to answer with a yes or no.Is black my favorite color? Yes or No?');
+    alert('You need to answer with a yes or no. Is black my favorite color? Yes or No?');
+  }
 }
+colorBlack();
+
 // Question 6
 let attempts = 4;
 let correctNumber = 7;
