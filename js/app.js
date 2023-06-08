@@ -9,17 +9,21 @@ let userName = prompt('What is your name?');
 console.log(userName);
 alert('Hello ' + userName);
 
-let doILikeCars = prompt('Do I like cars? Yes or No?').toLowerCase();
-if (doILikeCars === 'yes' || doILikeCars === 'y'){
-  //console.log('Yes, I like cars');
-  alert('Yes i like cars.');
-} else if (doILikeCars === 'no' || doILikeCars === 'n'){
-  //console.log('That\'s incorrect');
-  alert('That\'s incorrect.');
-} else {
-  //console.log('You need to answer with a yes or no. Do I like cars?');
-  alert('You need to answer with a yes or no. Do I like cars?');
+function checkIfILikeCars() {
+  let doILikeCars = prompt('Do I like cars? Yes or No?').toLowerCase();
+  if (doILikeCars === 'yes' || doILikeCars === 'y'){
+    //console.log('Yes, I like cars');
+    alert('Yes i like cars.');
+  } else if (doILikeCars === 'no' || doILikeCars === 'n'){
+    //console.log('That\'s incorrect');
+    alert('That\'s incorrect.');
+  } else {
+    //console.log('You need to answer with a yes or no. Do I like cars?');
+    alert('You need to answer with a yes or no. Do I like cars?');
+  }
 }
+checkIfILikeCars();
+
 let cityBorn = prompt('Was I born in Santa Ana? Yes or No?').toLowerCase();
 if (cityBorn === 'yes' || cityBorn === 'y'){
   //console.log('Yes, I was born in Santa Ana.');
