@@ -39,18 +39,21 @@ function checkBornCity() {
 }
 checkBornCity();
 
-
-let favoriteCar = prompt('Is the BMW M3 my favorite car? Yes or No?').toLowerCase();
-if (favoriteCar === 'yes' || favoriteCar === 'y'){
-  //console.log('Yes that\'s correct');
-  alert('Yes that\'s correct');
-} else if (favoriteCar === 'no' || favoriteCar === 'n'){
-  //console.log('That\'s incorrect');
-  alert('That\'s incorrect');
-} else {
-  //console.log('You need to answer with a yes or no. Is the BMW M3 my favorite car? Yes or No?);
-  alert('You need to answer with a yes or no. Is the BMW M3 my favorite car? Yes or No?');
+function myFavCars() {
+  let favoriteCar = prompt('Is the BMW M3 my favorite car? Yes or No?').toLowerCase();
+  if (favoriteCar === 'yes' || favoriteCar === 'y'){
+    //console.log('Yes that\'s correct');
+    alert('Yes that\'s correct');
+  } else if (favoriteCar === 'no' || favoriteCar === 'n'){
+    //console.log('That\'s incorrect');
+    alert('That\'s incorrect');
+  } else {
+    //console.log('You need to answer with a yes or no. Is the BMW M3 my favorite car? Yes or No?);
+    alert('You need to answer with a yes or no. Is the BMW M3 my favorite car? Yes or No?');
+  }
 }
+myFavCars();
+
 
 let hatePhotography = prompt('Do i hate photography? Yes or No').toLowerCase();
 if (hatePhotography === 'yes' || hatePhotography ==='y'){
