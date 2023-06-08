@@ -85,25 +85,30 @@ function colorBlack() {
 colorBlack();
 
 // Question 6
-let attempts = 4;
-let correctNumber = 7;
 
-for (let i = 0; i < attempts; i++) {
-  let userGuess = prompt(`Pick a number from 1 to 10. (You have ${attempts - i} attemps reamining):`);
-  userGuess = parseInt(userGuess);
-  console.log(correctNumber);
-  console.log(userGuess);
-  console.log(typeof userGuess);
-  if (userGuess < correctNumber) {
-    alert('Too Low!');
-  } else if (userGuess > correctNumber) {
-    alert('Too High');
-  } else if (userGuess === correctNumber) {
-    alert('Just right');
-    break;
+function pickCorrectNumber() {
+  let attempts = 4;
+  let correctNumber = 7;
+
+  for (let i = 0; i < attempts; i++) {
+    let userGuess = prompt(`Pick a number from 1 to 10. (You have ${attempts - i} attemps reamining):`);
+    userGuess = parseInt(userGuess);
+    console.log(correctNumber);
+    console.log(userGuess);
+    console.log(typeof userGuess);
+    if (userGuess < correctNumber) {
+      alert('Too Low!');
+    } else if (userGuess > correctNumber) {
+      alert('Too High');
+    } else if (userGuess === correctNumber) {
+      alert('Just right');
+      break;
+    }
   }
+  alert('The answer is 7');
 }
-alert('The answer is 7');
+pickCorrectNumber();
+
 // Question 7
 let favCarsAnswers = ['BMW E36', 'BMW E30', 'Porsche 997', 'BMW E46', 'Toyota AE86 Trueno', 'Nissan 240 S14','Nissan 240 S13', 'Mazda RX7 FD', 'Nissan R32 Skyline', 'Ford Mustang 1968'];
 let attemptsToGo = 20;
