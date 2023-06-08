@@ -18,3 +18,10 @@ From diving into the basics of coding to exploring advanced concepts, I'll be do
 
 * Consider including the answers to your daily journal and submission questions here
 * This is also a good place to reflect on the tools and resources used and learned.
+
+# Collaboration
+
+* Driver: Adnan Mohamud
+* Navigator: David Segura
+
+We worked on lab 4 together. This file has been edited by Adnan Mohamud (driver) with David Segura guiding me (navigator).
