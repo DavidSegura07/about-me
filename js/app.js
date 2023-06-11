@@ -1,13 +1,16 @@
 'use strict';
 
-// proof life
-console.log('Hello');
+// // proof life
+// console.log('Hello');
 
-alert('Welcome');
+let userPoints = 0;
+// alert('Welcome');
 
 // let userName = prompt('What is your name?');
 // console.log(userName);
-// alert('Hello ' + userName);
+// alert('Hello ' + userName + ' Lets play a guessing game.');
+
+// // Question 1
 
 // function checkIfILikeCars() {
 //   let doILikeCars = prompt('Do I like cars? Yes or No?').toLowerCase();
@@ -24,6 +27,8 @@ alert('Welcome');
 // }
 // checkIfILikeCars();
 
+// // Question 2
+
 // function checkBornCity() {
 //   let cityBorn = prompt('Was I born in Santa Ana? Yes or No?').toLowerCase();
 //   if (cityBorn === 'yes' || cityBorn === 'y'){
@@ -38,6 +43,8 @@ alert('Welcome');
 //   }
 // }
 // checkBornCity();
+
+// // Question 3
 
 // function myFavCars() {
 //   let favoriteCar = prompt('Is the BMW M3 my favorite car? Yes or No?').toLowerCase();
@@ -54,6 +61,8 @@ alert('Welcome');
 // }
 // myFavCars();
 
+// // Question 4
+
 // function hatePhoto() {
 //   let hatePhotography = prompt('Do i hate photography? Yes or No').toLowerCase();
 //   if (hatePhotography === 'yes' || hatePhotography ==='y'){
@@ -68,6 +77,8 @@ alert('Welcome');
 //   }
 // }
 // hatePhoto();
+
+// // Question 5
 
 // function colorBlack() {
 //   let secondFavoriteColor = prompt('Is black my favorite color? Yes or No?').toLowerCase();
@@ -111,42 +122,33 @@ alert('Welcome');
 
 // // Question 7
 
-// function guessFavoriteCars() {
-//   let favCarsAnswers = ['BMW E36', 'BMW E30', 'Porsche 997', 'BMW E46', 'Toyota AE86 Trueno', 'Nissan 240 S14','Nissan 240 S13', 'Mazda RX7 FD', 'Nissan R32 Skyline', 'Ford Mustang 1968'];
-//   let attemptsToGo = 20;
-
-//   for (let j = 0; j < attemptsToGo; j++) {
-//     let userGuess = prompt(`What are my top 10 favorite cars? (You have ${attemptsToGo - j} attemps reamining):`).toLowerCase();
-//     console.log(favCarsAnswers);
-//     console.log(userGuess);
-//     console.log(typeof userGuess);
-//     if (favCarsAnswers === userGuess) {
-//       alert('That\'s Correct! what other cars are on my top ten?');
-//     } else if (!favCarsAnswers.includes(userGuess)) {
-//       alert('Not quite,');
-//       break;
-//     }
-//   }
-//   alert ('My Top Ten are ' + favCarsAnswers.join(','));
-// }
-// guessFavoriteCars();
-let favCarsAnswers = ['BMW E36', 'BMW E30', 'Porsche 997', 'BMW E46', 'Toyota AE86 Trueno', 'Nissan 240 S14', 'Nissan 240 S13', 'Mazda RX7 FD', 'Nissan R32 Skyline', 'Ford Mustang 1968'];
-let attemptsToGo = 6;
-
-//j = 1
-//userGuess = porsche 997
-//favCarsAnswers[]
-for (let j = 0; j < attemptsToGo; j++) {
-  let userGuess = prompt(`What are my top 10 favorite cars? (You have ${attemptsToGo - j} attemps reamining):`).toLowerCase();
-  console.log(favCarsAnswers[j]);
-  console.log(userGuess);
-  console.log(typeof userGuess);
-  for (let k = 0; k < favCarsAnswers.length; k++) {
-    if (userGuess === favCarsAnswers[k].toLowerCase()) {
-      console.log(userGuess + '===' + favCarsAnswers[k].toLowerCase());
-      alert('That\'s Correct! what other cars are on my top ten?');
-      console.log('That\'s Correct! what other cars are on my top ten?');
-    } else {
-      alert('That\' incorrect, guess again.');}
+function guessFavoriteCars() {
+  let favCarsAnswers = ['BMW E36', 'BMW E30', 'Porsche 997', 'BMW E46', 'Toyota AE86 Trueno', 'Nissan 240 S14', 'Nissan 240 S13', 'Mazda RX7 FD', 'Nissan R32 Skyline', 'Ford Mustang 1968'];
+  let attemptsToGo = 6;
+  //j = 1
+  //userGuess = porsche 997
+  //favCarsAnswers[]
+  for (let j = 0; j < attemptsToGo; j++) {
+    // This for loop will stop at 6 attempts
+    let userGuess = prompt(`What are my top 10 favorite cars? (You have ${attemptsToGo - j} attemps reamining):`).toLowerCase();
+    console.log(favCarsAnswers.length[j]);
+    console.log(userGuess);
+    console.log(typeof userGuess);
+    for (let k = 0; k < favCarsAnswers.length; k++) {
+      if (userGuess === favCarsAnswers[k].toLowerCase()) {
+        // console.log(userGuess + '===' + favCarsAnswers[k].toLowerCase());
+        console.log('That\'s Correct! what other cars are on my top ten?');
+        alert('That\'s Correct! what other cars are on my top ten?');
+        break;
+      } else { (userGuess);
+        alert('That\' incorrect, guess again.');
+        break;
+      }
+    }
   }
 }
+guessFavoriteCars();
+
+let totalPoints = userPoints();
+console.log(totalPoints);
+alert(totalPoints);

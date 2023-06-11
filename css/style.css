@@ -2,25 +2,52 @@
     box-sizing: border-box;
 }
 header {
-    background-color: aqua;
+    background-color: #DB3A34;
 }
-
 h1 {
     font-size: 4rem;
+    color: rgb(255, 255, 255);
     padding-bottom: 2rem;
+    padding-top: 2rem;
+    padding-left: 2rem;
+}
+
+body {
+    background-color: #084C61;
+}
+li {
+    color: #E7E5E5;
+}
+
+#myface {
+width: 20rem;
+border-radius: 100%;
+overflow: auto;
+}
+p {
+    color: #E7E5E5;
 }
 h2 {
     font-size: 3rem;
+    color: #FFBA08;
     padding-bottom: 1rem;
 }
 
 h3 {
     font-size: 2rem;
     padding-top: 1rem;
+    color:#FFBA08
 }
 
 ol {
+    color: #E7E5E5;
     list-style-position: inside;
     list-style: decimal;
     padding: 1rem;
+}
+footer {
+    background-color: #FFBA08;
+}
+#footer-text {
+    color: black;
 }
