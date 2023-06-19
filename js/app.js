@@ -122,33 +122,26 @@ let userPoints = 0;
 
 // // Question 7
 
-function guessFavoriteCars() {
-  let favCarsAnswers = ['BMW E36', 'BMW E30', 'Porsche 997', 'BMW E46', 'Toyota AE86 Trueno', 'Nissan 240 S14', 'Nissan 240 S13', 'Mazda RX7 FD', 'Nissan R32 Skyline', 'Ford Mustang 1968'];
-  let attemptsToGo = 6;
-  //j = 1
-  //userGuess = porsche 997
-  //favCarsAnswers[]
-  for (let j = 0; j < attemptsToGo; j++) {
-    // This for loop will stop at 6 attempts
-    let userGuess = prompt(`What are my top 10 favorite cars? (You have ${attemptsToGo - j} attemps reamining):`).toLowerCase();
-    console.log(favCarsAnswers.length[j]);
-    console.log(userGuess);
-    console.log(typeof userGuess);
-    for (let k = 0; k < favCarsAnswers.length; k++) {
-      if (userGuess === favCarsAnswers[k].toLowerCase()) {
-        // console.log(userGuess + '===' + favCarsAnswers[k].toLowerCase());
-        console.log('That\'s Correct! what other cars are on my top ten?');
-        alert('That\'s Correct! what other cars are on my top ten?');
-        break;
-      } else { (userGuess);
-        alert('That\' incorrect, guess again.');
-        break;
-      }
+
+let favCarsAnswers = ['BMW E36', 'BMW E30', 'Porsche 997', 'BMW E46', 'Toyota AE86 Trueno', 'Nissan 240 S14', 'Nissan 240 S13', 'Mazda RX7 FD', 'Nissan R32 Skyline', 'Ford Mustang 1968'];
+let attemptsToGo = 6;
+
+for (let i = 0; i < attemptsToGo; i++) {
+  console.log(attemptsToGo);
+  let userGuess = prompt(`what is one of my favorite cars? You have  ${attemptsToGo - i - 1}   left.`);
+  console.log(attemptsToGo);
+  for (let j = 0; j < favCarsAnswers.length; j++) {
+    console.log(favCarsAnswers[j].toLowerCase);
+    console.log(typeof favCarsAnswers);
+    if (userGuess === favCarsAnswers[j].toLowerCase()) {
+      console.log('You are correct!');
+      alert('You are correct!');
+      break;
+    }
+    else {
+      console.log(`No try again. You have  ${attemptsToGo - i - 1}   left.`);
     }
   }
 }
-guessFavoriteCars();
 
-let totalPoints = userPoints();
-console.log(totalPoints);
-alert(totalPoints);
+
